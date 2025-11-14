@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registered Students</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Registered Students</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Course</th>
+    </tr>
+    <% students.forEach(student => { %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+        <td><%= student.course %></td>
+      </tr>
+    <% }) %>
+  </table>
+
+  <a href="/">Back to Registration</a>
+</body>
+</html>
